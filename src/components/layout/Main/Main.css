@@ -1,0 +1,31 @@
+main {
+    transition: all 0.4s ease-in-out;
+    min-height: 100dvh;
+}
+
+.dark-theme {
+    background-color: #212121;
+    color: aliceblue;
+}
+
+.light-theme {
+    background-color: #e4dfdffc;
+    color: rgb(21, 21, 21);
+}
+
+.light-back-clr {
+    background-color: rgba(245, 235, 223, 0.816);
+    color: rgb(21, 21, 21);
+}
+.dark-back-clr {
+    background-color: rgba(50, 51, 52, 0.604);
+    color: aliceblue;
+}
+
+.block-h1 {
+    font-family: 'IM Fell Great Primer SC';
+    font-size: 2.8rem;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+}

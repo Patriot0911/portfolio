@@ -1,0 +1,57 @@
+
+.partial-block {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    animation: initial-appearance-vertical 0.3s linear;
+}
+.partial-block h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.opened {
+    height: 320px;
+}
+.partial-block .img-box{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.partial-block .title-img{
+    margin: 15px;
+    border: 1px solid black;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
+.partial-block .blank-img{
+    background: linear-gradient(50deg, #898787, #1F2322);
+    border: 1px solid black;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
+.partial-block .info {
+    padding: 10px;
+}
+.partial-block p{
+    text-indent: 0.5rem;
+}
+.partial-block .img-tick {
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.rotated {
+    transform: rotateX(180deg);
+}

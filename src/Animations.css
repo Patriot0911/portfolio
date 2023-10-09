@@ -1,0 +1,32 @@
+@keyframes avatar-back-anim {
+    0%, 100% {
+        width: 304px;
+        height: 304px;
+    }
+    25%, 75% {
+        width: 344px;
+        height: 344px;
+    }
+}
+
+@keyframes initial-appearance-vertical-f {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        width: translateY(0);
+    }
+}
+
+@keyframes initial-appearance-vertical {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    100% {
+        opacity: 1;
+        width: translateY(0);
+    }
+}

@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    min-height: 50px;
+}
+
+.dark-footer {
+    background: linear-gradient(#212121 5%, rgba(30, 30, 30, 0.54) 95%);
+}
+.light-footer {
+    background: linear-gradient(#e4dfdffc 5%, rgba(255, 255, 255, 0.788) 95%);
+}
