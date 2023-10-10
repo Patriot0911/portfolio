@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { useThemeContext } from "../../context/useThemeContext";
 import PartialBlock from "../ui/PartialBlock/PartialBlock";
+import initExpertises from "../../scripts/initExpertises";
 
 const ExpertiseBlocks = () => {
+    const [expertises] = useState(initExpertises);
     const themeValue = useThemeContext();
     const theme = themeValue?.theme ? themeValue?.theme : 'dark';
 
@@ -9,43 +12,32 @@ const ExpertiseBlocks = () => {
         <div
             className={'middle-block'}
         >
+
             <div
                 className={'info-column'}
             >
-                <PartialBlock
-                    theme={theme}
-                    title={'Test Title'}
-                    dLength={140}
-                    description={'Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati assumenda magni nesciunt ipsam dolor autem ad optio ipsum, velit magnam perspiciatis placeat quas libero voluptas delectus iste quod! Veniam.'}
-                />
-                <PartialBlock
-                    theme={theme}
-                    title={'Test Title'}
-                    dLength={140}
-                    description={'Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati assumenda magni nesciunt ipsam dolor autem ad optio ipsum, velit magnam perspiciatis placeat quas libero voluptas delectus iste quod! Veniam.'}
-                />
-                <PartialBlock
-                    theme={theme}
-                    title={'Test Title'}
-                    dLength={140}
-                    description={'Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati assumenda magni nesciunt ipsam dolor autem ad optio ipsum, velit magnam perspiciatis placeat quas libero voluptas delectus iste quod! Veniam.'}
-                />
-                <PartialBlock
-                    theme={theme}
-                    title={'Test Title'}
-                    dLength={140}
-                    description={'Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati assumenda magni nesciunt ipsam dolor autem ad optio ipsum, velit magnam perspiciatis placeat quas libero voluptas delectus iste quod! Veniam.'}
-                />
+                {
+                    expertises[0].map((item, index) => {
+                        return <PartialBlock
+                            key={`${index}-1clm`}
+                            theme={theme}
+                            {...item}
+                        />
+                    })
+                }
             </div>
             <div
                 className={'info-column'}
             >
-                <PartialBlock
-                    theme={theme}
-                    title={'Test Title'}
-                    dLength={140}
-                    description={'Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati assumenda magni nesciunt ipsam dolor autem ad optio ipsum, velit magnam perspiciatis placeat quas libero voluptas delectus iste quod! Veniam.'}
-                />
+                {
+                    expertises[1].map((item, index) => {
+                        return <PartialBlock
+                            key={`${index}-1clm`}
+                            theme={theme}
+                            {...item}
+                        />
+                    })
+                }
             </div>
         </div>
     );

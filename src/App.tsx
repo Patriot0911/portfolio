@@ -11,24 +11,24 @@ import './App.css';
 import './Animations.css';
 
 function App() {
-  const {
-    refs,
-    scrollHandle
-  } = useScroll(SECTIONSCOUNT);
-  const [sections] = useState(initSections(refs));
+	const {
+		refs,
+		scrollHandle
+	} = useScroll(SECTIONSCOUNT);
+	const [sections] = useState(initSections(refs));
 
-  return (
-    <ThemeProvider>
-      <Header
-        sections={sections}
-        scrollHandle={scrollHandle}
-      />
-      <Main
-        sections={sections}
-      />
-      <Footer />
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider>
+			<Header
+				sections={sections}
+				scrollHandle={scrollHandle}
+			/>
+			<Main
+				sections={sections}
+			/>
+			<Footer />
+		</ThemeProvider>
+	);
 };
 
 export default App;

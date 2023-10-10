@@ -1,6 +1,6 @@
 import { IPartialImgBoxProps } from "../../../types";
 
-const PartialImgBox = ({ img }: IPartialImgBoxProps) => {
+const PartialImgBox = ({ img }: IPartialImgBoxProps) => { // [160x160 px]
     return (
         <div
             className={'img-box'}

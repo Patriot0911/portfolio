@@ -57,6 +57,13 @@ export interface ISkillBlockInfoProps {
     list: string[];
 };
 
+export interface IExpertiseInfo {
+	title: string;
+	description: string;
+	dLength?: number;
+	imglink?: string;
+};
+
 export interface IUseScrollReturn {
     refs: TRefsArray;
     scrollHandle: (index: number) => void;
