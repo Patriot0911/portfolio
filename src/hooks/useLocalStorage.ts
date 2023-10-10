@@ -5,9 +5,10 @@ const useLocalStorage = (name: string) => {
         window.localStorage.setItem(name, JSON.stringify(value));
     };
     const getItem = () => {
-        if(window.localStorage.getItem(name) === null)
+        const item = window.localStorage.getItem(name);
+        if(!item)
             return 'dark';
-        return window.localStorage.getItem(name) as TThemes;
+        return JSON.parse(item) as TThemes;
     };
     const removeItem = () => {
         if(window.localStorage.getItem(name))
