@@ -8,7 +8,10 @@ export const ThemeProvider = ({ children }: IThemeProviderProps) => {
         setItem,
         getItem
     } = useLocalStorage('theme');
-    const [theme, setTheme] = useState<TThemes>(getItem());
+
+    const initTheme = getItem() ? getItem() as TThemes : 'dark';
+
+    const [theme, setTheme] = useState<TThemes>(initTheme);
     const [isChanged, setChanged] = useState<boolean>(false);
 
     const themeHandle = (thenemName: TThemes) => {
