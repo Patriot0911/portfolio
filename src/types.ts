@@ -26,12 +26,12 @@ export interface IPartialInfoProps {
 export interface IBlockProps {
     theme: TThemes;
     title: string;
-    img?: string;
+    imglink?: string;
     dLength?: number;
     description: string;
 };
 export interface IPartialImgBoxProps {
-    img?: string;
+    imglink?: string;
 };
 
 export interface IThemeProps {

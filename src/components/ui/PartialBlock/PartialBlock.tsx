@@ -17,7 +17,7 @@ const PartialBlock = (props: IBlockProps) => {
             className={`partial-block ${props.theme}-back-clr ${isOpen ? 'opened' : ''}`}
         >
             <PartialImgBox
-                img={props.img}
+                imglink={props.imglink}
             />
             <PartialInfo
                 title={props.title}

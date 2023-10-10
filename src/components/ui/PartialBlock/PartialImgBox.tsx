@@ -1,15 +1,15 @@
 import { IPartialImgBoxProps } from "../../../types";
 
-const PartialImgBox = ({ img }: IPartialImgBoxProps) => { // [160x160 px]
+const PartialImgBox = ({ imglink }: IPartialImgBoxProps) => { // [160x160 px]
     return (
         <div
             className={'img-box'}
         >
             {
-                img ?
+                imglink ?
                 <img
                     className={'title-img'}
-                    src={img}
+                    src={imglink}
                 /> :
                 <div
                     className={'blank-img'}
