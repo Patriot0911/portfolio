@@ -1,4 +1,4 @@
-import { ISectionTitleProps } from "../../types";
+import { ISectionTitleProps } from '../../types';
 
 const SectionTitle = ({ title }: ISectionTitleProps) => {
     return (

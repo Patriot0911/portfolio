@@ -1,5 +1,5 @@
-import Markdown from "react-markdown";
-import { IPartialInfoProps } from "../../../types";
+import Markdown from 'react-markdown';
+import { IPartialInfoProps } from '../../../types';
 import tickImg from '../../../assets/tick.svg';
 
 const PartialInfo = (props: IPartialInfoProps) => {

@@ -1,4 +1,4 @@
-import { IPartialImgBoxProps } from "../../../types";
+import { IPartialImgBoxProps } from '../../../types';
 
 const PartialImgBox = ({ imglink }: IPartialImgBoxProps) => { // [160x160 px]
     return (

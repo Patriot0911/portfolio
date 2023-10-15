@@ -1,4 +1,4 @@
-import { INavButtonProps } from "../../../types";
+import { INavButtonProps } from '../../../types';
 
 const NavButton = ({ name, callback }: INavButtonProps) => {
     return (

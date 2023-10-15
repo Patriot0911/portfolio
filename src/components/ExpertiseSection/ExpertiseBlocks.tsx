@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { useThemeContext } from "../../context/useThemeContext";
-import PartialBlock from "../ui/PartialBlock/PartialBlock";
-import initExpertises from "../../scripts/initExpertises";
+import { useState } from 'react';
+import { useThemeContext } from '../../context/useThemeContext';
+import PartialBlock from '../ui/PartialBlock/PartialBlock';
+import initExpertises from '../../scripts/initExpertises';
 
 const ExpertiseBlocks = () => {
     const [expertises] = useState(initExpertises);
     const themeValue = useThemeContext();
     const theme = themeValue?.theme ? themeValue?.theme : 'dark';
-
+    console.log(expertises);
     return (
         <div
             className={'middle-block'}

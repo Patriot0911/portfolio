@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { IThemeProviderProps, TThemeValue, TThemes } from "../types";
-import { ThemeContext } from "./useThemeContext";
-import useLocalStorage from "../hooks/useLocalStorage";
+import { useState } from 'react';
+import { IThemeProviderProps, TThemeValue, TThemes } from '../types';
+import { ThemeContext } from './useThemeContext';
+import useLocalStorage from '../hooks/useLocalStorage';
+
+
 
 export const ThemeProvider = ({ children }: IThemeProviderProps) => {
     const {

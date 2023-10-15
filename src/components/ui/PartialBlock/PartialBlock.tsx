@@ -1,8 +1,8 @@
-import { IBlockProps } from "../../../types";
-import PartialImgBox from "./PartialImgBox";
-import { useState } from "react";
+import { IBlockProps } from '../../../types';
+import PartialImgBox from './PartialImgBox';
+import { useState } from 'react';
 import './PartialBlock.css';
-import PartialInfo from "./PartialInfo";
+import PartialInfo from './PartialInfo';
 
 
 const PartialBlock = (props: IBlockProps) => {
