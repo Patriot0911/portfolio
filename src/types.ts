@@ -29,6 +29,14 @@ export interface IExpertiseInfo {
 	imglink?: string;
 };
 
+export interface IProjectBlockProps {
+    title: string;
+    description: string;
+    imgLink: string;
+    github?: string;
+    theme?: TThemes;
+};
+
 export interface IAvatarProps {
     onLoaded: () => void;
 };
@@ -49,6 +57,11 @@ export interface IBlockProps {
     imglink?: string;
     dLength?: number;
     description: string;
+};
+
+export interface IInfoColumnsProps {
+    firstColumn: React.ReactNode,
+    secondColumn: React.ReactNode
 };
 
 export interface IUseScrollReturn {

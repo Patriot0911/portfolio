@@ -12,7 +12,7 @@ header {
 .header-light {
     background-color: #ffffff;
     color: black;
-    box-shadow: 4px 4px 5px 10px #edededfd;
+    box-shadow: 4px 4px 5px 10px #fbf3f3;
 }
 .header-dark {
     background-color: #353535;

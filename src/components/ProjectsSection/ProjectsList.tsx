@@ -1,31 +1,31 @@
 import { useState } from 'react';
 import { useThemeContext } from '../../context/useThemeContext';
-import initExpertises from '../../scripts/initExpertises';
-import PartialBlock from '../ui/PartialBlock/PartialBlock';
+import initProjects from '../../scripts/initProjects';
+import ProjectBlock from './ProjectBlock';
 import InfoColumns from '../ui/InfoColumns';
 
-const ExpertiseBlocks = () => {
-    const [expertises] = useState(initExpertises);
+const ProjectsList = () => {
+    const [projects] = useState(initProjects);
     const themeValue = useThemeContext();
     const theme = themeValue?.theme ? themeValue?.theme : 'dark';
 
     const getColumn = (columnNum: number) => {
-        return expertises[columnNum].map(
-            (item, index) => <PartialBlock
+        return projects[columnNum].map(
+            (item, index) => <ProjectBlock
                 {
                     ...item
                 }
                 theme={theme}
-                key={`${index}-${columnNum}-clm`}
+                key={`pr-block-${columnNum}-${index}`}
             />
         )
     };
 
     return (
         <InfoColumns
-            firstColumn={getColumn(0)}
-            secondColumn={getColumn(1)}
+            firstColumn={getColumn(1)}
+            secondColumn={getColumn(0)}
         />
     );
 };
-export default ExpertiseBlocks;
+export default ProjectsList;
