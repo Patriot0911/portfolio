@@ -18,7 +18,7 @@
 }
 
 .info-block :not(:first-child) {
-    text-indent: 20px;
+    text-indent: 10px;
 }
 .info-block p{
     margin-bottom: 10px;
@@ -37,6 +37,7 @@
     position: absolute;
     width: 330px;
     border-radius: 50%;
+    border: 2px solid black;
 }
 .avatar-img-box {
     position: absolute;

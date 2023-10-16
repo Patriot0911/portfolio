@@ -3,7 +3,7 @@ import {
     IAvatarProps,
     IThemeProps
 } from '../../types';
-import avatar from '../../assets/testAvatar.png';
+import avatar from '../../assets/avatar.png';
 
 const AvatarContainer = ({ theme }: IThemeProps) => {
     const [isLoaded, setLoaded] = useState(false);

@@ -17,7 +17,7 @@ const AboutSection = (_: unknown, ref: ForwardedRef<HTMLDivElement>) => {
             <AvatarContainer
                 theme={theme}
             />
-            <h1>Web Developer</h1>
+            <h1>Template</h1>
             <h3>[{WEBSTACK}]</h3>
             <InfoBlock
                 theme={theme}

@@ -7,12 +7,10 @@ const InfoBlock = ({ theme }: IThemeProps) => {
         >
             <h3>Hi!</h3>
             <p>
-                My name is <i>Oles</i>, and I am <i>Junior FrontEnd Developer</i>.<br />
-                My main stack at the moment includes React, Node.js, <br /> Discord.js and the basics of Express.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Architecto eius porro mollitia excepturi <br/>esse nesciunt veritatis dolor deleniti <br/>quisquam laboriosam laudantium consequatur hic, <br/>accusamus optio dignissimos est culpa tempora. Quas.
             </p>
             <p>
-                I am interested in learning new technology stack<br/> and programming languages.
-                I am drawn to unusual ideas and <br />challenging projects that are difficult to implement.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Labore fugiat, aperiam delectus animi aliquid eligendi<br/> ea saepe tenetur deserunt odit cum, quasi quis similique eius<br/> autem nam dolorem possimus architecto!
             </p>
         </div>
     );
